@@ -12,6 +12,9 @@ variable "AzureClientSecret" {
 variable "AzureTenantID" {
 }
 
+variable "AzureStorageAccessKey"{
+  
+}
 
 #Variable defining the resource group name
 
