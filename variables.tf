@@ -47,6 +47,30 @@ variable "RGSecurityGroup" {
   default = "RG-ZT-SG"
 }
 
+# Name of the cluster
+variable "RGLabCluster" {
+  type    = string
+  default = "RG-ZT-CLUSTER"
+}
+
+# Name of the node pool
+variable "RGClusterNodePoolName" {
+  type    = string
+  default = "clusterzt"
+}
+
+# Number of nodes in the node pool
+variable "RGClusterNodePoolCount" {
+  type    = number
+  default = 1
+}
+
+# Size of the nodes in the node pool
+variable "RGClusterNodePoolVMSize" {
+  type    = string
+  default = "Standard_B2s"
+}
+
 #Variable defining the Azure region
 
 variable "AzureRegion" {
